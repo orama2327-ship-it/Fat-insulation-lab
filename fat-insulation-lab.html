@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>هل تساعد الدهون الحيوانات على العيش في البيئة الباردة؟</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ice:#2f7fb8; --ice-dark:#1e5c88; --gold:#e0a13a; --snow:#eaf4fb;
+  --cream:#f0f7fb; --ink:#1f2d38; --card:#ffffff;
+  padding-top: env(safe-area-inset-top,0px); padding-bottom: env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;}
+html,body{margin:0;background:var(--cream);color:var(--ink);font-family:'Tajawal',sans-serif;}
+body{padding:24px 16px 60px;}
+.wrap{max-width:760px;margin:0 auto;}
+header{background:linear-gradient(135deg,var(--ice),#7fb8dd);border-radius:20px;padding:28px 24px;box-shadow:0 6px 0 var(--ice-dark);}
+header h1{margin:0 0 6px;font-size:1.55rem;font-weight:900;color:#fff;}
+header p{margin:0;color:#e6f3fb;font-weight:500;}
+.goal{background:var(--card);border-radius:16px;padding:18px 20px;margin-top:18px;border-inline-start:6px solid var(--gold);line-height:1.9;}
+.goal b{color:var(--ice-dark);}
+.materials{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.mchip{background:var(--card);border-radius:12px;padding:10px 14px;font-size:.9rem;font-weight:700;color:var(--ice-dark);}
+section.step{background:var(--card);border-radius:18px;padding:20px;margin-top:20px;box-shadow:0 3px 0 #dbe9f2;}
+.step h2{display:flex;align-items:center;gap:10px;font-size:1.1rem;margin:0 0 12px;color:var(--ice-dark);}
+.badge{background:var(--ice);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;flex-shrink:0;font-size:.9rem;}
+.hint{font-size:.95rem;line-height:1.9;color:#37505f;margin:0 0 10px;}
+.qa{margin-top:14px;padding-top:12px;border-top:1px dashed #dcebf3;}
+.qa p.q{font-weight:700;margin:0 0 8px;}
+button.reveal{background:var(--gold);color:#fff;border:none;border-radius:10px;padding:8px 16px;font-family:inherit;font-weight:700;font-size:.9rem;cursor:pointer;}
+.answer{display:none;background:#e8f3fb;border-radius:10px;padding:12px 14px;margin-top:10px;line-height:1.9;font-size:.95rem;border-inline-start:5px solid var(--ice);}
+.answer.show{display:block;}
+
+.timers{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:10px;}
+.timer{flex:1;min-width:150px;max-width:230px;text-align:center;background:var(--snow);border:2px solid #cfe4f2;border-radius:16px;padding:14px;}
+.timer h3{margin:0 0 8px;font-size:.9rem;color:var(--ice-dark);}
+.time-display{font-size:1.7rem;font-weight:900;color:var(--ice-dark);font-variant-numeric:tabular-nums;}
+.timer .btns{display:flex;gap:6px;justify-content:center;margin-top:10px;}
+.timer button{border:none;border-radius:8px;padding:6px 10px;font-family:inherit;font-weight:700;font-size:.8rem;cursor:pointer;}
+.btn-start{background:#4a9a4e;color:#fff;}
+.btn-stop{background:#d9534f;color:#fff;}
+.btn-reset{background:#aab7c0;color:#fff;}
+
+.extra{background:linear-gradient(135deg,#eaf3fb,#d9ecf9);border:2px dashed var(--ice);border-radius:18px;padding:20px;margin-top:22px;}
+.extra h2{margin:0 0 8px;color:var(--ice-dark);font-size:1.05rem;}
+footer{text-align:center;margin-top:26px;color:#8395a3;font-size:.85rem;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--cream:#131c22;--card:#1c262e;--ink:#e9f2f8;}
+  .answer{background:#182734;}
+  .timer{background:#182029;border-color:#2c3c48;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>🧊 هَل تُساعِدُ الدُّهونُ الحَيَواناتِ على العَيشِ في البيئَةِ البارِدَةِ؟</h1>
+  <p>نَشاطٌ اسْتِقْصائِيٌّ · أَسْتَكْشِفُ</p>
+</header>
+
+<div class="goal">
+  <b>أُكَوِّنُ فَرَضِيَّةً:</b> هَل يُمكِنُ لِلكريمِ المُرَطِّبِ المُحافَظَةُ على إِصبَعي دافِئَةً في الماءِ البارِدِ؟ أَكتُبُ فَرَضِيَّتي: "إذا وَضَعتُ على إِصبَعي طَبَقَةً مِنَ الكريمِ المُرَطِّبِ فَإِنَّ...".
+</div>
+
+<div class="materials">
+  <div class="mchip">🧴 كريم مُرَطِّب أو فازلين</div>
+  <div class="mchip">🧻 مَناشِف وَرَقِيَّة</div>
+  <div class="mchip">⏱️ ساعَة إيقاف</div>
+  <div class="mchip">🧊 ماء بارِد فيه ثَلج</div>
+</div>
+
+<section class="step">
+  <h2><span class="badge">١</span> أَختَبِرُ فَرَضِيَّتي</h2>
+  <p class="hint">أَستَخدِمُ مِنشَفَةً وَرَقِيَّةً لِأُغَطِّيَ إِحدى أَصابِعي بِالكريمِ، وأَترُكُ الإِصبَعَ الثّانِيَةَ مِن دونِ أَنْ أُغَطِّيَها بِالكريمِ.</p>
+  <div class="qa">
+    <p class="q">أَتَوَقَّعُ: ماذا يَحدُثُ عِندَ وَضعِ كُلٍّ مِنَ الإِصبَعَينِ في ماءٍ بارِدٍ فيهِ ثَلجٌ؟</p>
+    <button class="reveal" onclick="toggleAns('a0')">إظهار توقّعي المقترح</button>
+    <div class="answer" id="a0">مِنَ المُتَوَقَّعِ أَنَّ الإِصبَعَ المُغَطّاةَ بِالكريمِ سَتَبقى دافِئَةً لِفَترَةٍ أَطوَلَ، بَينَما تَشعُرُ الإِصبَعُ غَيرُ المُغَطّاةِ بِالبَرودَةِ بِسُرعَةٍ أَكبَرَ.</div>
+  </div>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٢</span> أُجَرِّبُ — بِساعَةِ الإيقافِ التَّفاعُلِيَّةِ</h2>
+  <p class="hint">أَضَعُ إِصبَعي المَدهونَةَ في الماءِ الَّذي فيهِ ثَلجٌ، وأَطلُبُ إلى زَميلي أَنْ يَحسُبَ الوَقتَ الَّذي أَستَطيعُ خِلالَهُ أَنْ أُبقِيَ إِصبَعي في الماءِ. ثُمَّ أُعيدُ ذلكَ بِإِصبَعٍ أُخرى غَيرِ مُغَطّاةٍ، وأُسَجِّلُ النَّتائِجَ. بَعدَ ذلكَ أَتَبادَلُ الأَدوارَ مَعَ زَميلي.</p>
+  <div class="timers">
+    <div class="timer">
+      <h3>🧴 الإصبع المدهونة</h3>
+      <div class="time-display" id="disp1">٠٠:٠٠</div>
+      <div class="btns">
+        <button class="btn-start" onclick="start(1)">ابدأ</button>
+        <button class="btn-stop" onclick="stop(1)">إيقاف</button>
+        <button class="btn-reset" onclick="reset(1)">تصفير</button>
+      </div>
+    </div>
+    <div class="timer">
+      <h3>✋ الإصبع العادية</h3>
+      <div class="time-display" id="disp2">٠٠:٠٠</div>
+      <div class="btns">
+        <button class="btn-start" onclick="start(2)">ابدأ</button>
+        <button class="btn-stop" onclick="stop(2)">إيقاف</button>
+        <button class="btn-reset" onclick="reset(2)">تصفير</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="step">
+  <h2><span class="badge">٣</span> أَسْتَخْلِصُ النَّتائِجَ</h2>
+  <div class="qa">
+    <p class="q">أُفَسِّرُ البَياناتِ: أَيُّ إِصبَعٍ يُمكِنُ أَنْ أُبقِيَها في الماءِ الَّذي فيهِ ثَلجٌ مُدَّةً أَطوَلَ؟ ولِماذا؟</p>
+    <button class="reveal" onclick="toggleAns('a1')">إظهار الإجابة</button>
+    <div class="answer" id="a1">الإِصبَعُ المُغَطّاةُ بِالكريمِ (أَو الفازِلين) هيَ الَّتي يُمكِنُ إِبقاؤُها في الماءِ البارِدِ مُدَّةً أَطوَلَ، وذلكَ لِأَنَّ طَبَقَةَ الدُّهونِ تَعمَلُ كَعازِلٍ يُقَلِّلُ مِن فُقدانِ حَرارَةِ الجِسمِ إلى الماءِ البارِدِ المُحيطِ بِها.</div>
+  </div>
+  <div class="qa">
+    <p class="q">أَسْتَنتِجُ: يَحتَوي جِسمُ الفَقمَةِ على طَبَقَةٍ مِنَ الدُّهونِ تَحتَ الجِلدِ. كَيفَ يُساعِدُها ذلكَ على البَقاءِ في المَناطِقِ البارِدَةِ؟</p>
+    <button class="reveal" onclick="toggleAns('a2')">إظهار الإجابة</button>
+    <div class="answer" id="a2">طَبَقَةُ الدُّهونِ (الشَّحمُ) تَحتَ جِلدِ الفَقمَةِ تَعمَلُ كَعازِلٍ حَرارِيٍّ يَحبِسُ دِفءَ الجِسمِ ويَمنَعُ خُروجَهُ إلى الماءِ البارِدِ المُحيطِ، مِمّا يُمَكِّنُ الفَقمَةَ مِنَ الحِفاظِ على دَرَجَةِ حَرارَةِ جِسمِها والعَيشِ في المَناطِقِ القُطبِيَّةِ شَديدَةِ البُرودَةِ.</div>
+  </div>
+</section>
+
+<div class="extra">
+  <h2>🔍 أَسْتَكْشِفُ أَكثَر</h2>
+  <p class="hint">أُجَرِّبُ: كَيفَ يُمكِنُني أَنْ أَقيسَ دَورَ الدُّهونِ في المُحافَظَةِ على دِفءِ الأَشياءِ؟ هَل أَستَطيعُ أَنْ أَستَعمِلَ مِقياسَ الحَرارَةِ؟ أَضَعُ خُطَّةً وأُجَرِّبُها.</p>
+  <div class="qa" style="border-top:none;padding-top:0;">
+    <button class="reveal" onclick="toggleAns('a3')">اقتراح خطة</button>
+    <div class="answer" id="a3">أُحَضِّرُ إِناءَينِ مُتَشابِهَينِ فيهِما ماءٌ ساخِنٌ بِالدَّرَجَةِ نَفسِها، وأُغَلِّفُ أَحَدَهُما بِطَبَقَةٍ مِنَ الدُّهونِ (كَالفازِلينِ) أَو أُغَطّيهِ بِمادَّةٍ عازِلَةٍ، وأَترُكُ الآخَرَ مِن دونِ تَغطِيَةٍ. أَضَعُ مِقياسَ حَرارَةٍ في كُلِّ إِناءٍ، وأُسَجِّلُ دَرَجَةَ الحَرارَةِ كُلَّ خَمسِ دَقائِقَ لِمُدَّةِ نِصفِ ساعَةٍ، لِأَرى أَيُّ إِناءٍ يَحتَفِظُ بِدِفئِهِ مُدَّةً أَطوَلَ.</div>
+  </div>
+</div>
+
+<footer>مختبر افتراضي تفاعلي · وحدة الحيوانات والبيئات</footer>
+</div>
+
+<script>
+function toggleAns(id){document.getElementById(id).classList.toggle('show');}
+const timers={1:{t:0,run:false,iv:null},2:{t:0,run:false,iv:null}};
+function fmt(s){const m=Math.floor(s/60);const ss=s%60;return String(m).padStart(2,'0')+':'+String(ss).padStart(2,'0');}
+function start(n){
+  const T=timers[n];
+  if(T.run)return;
+  T.run=true;
+  T.iv=setInterval(function(){T.t++;document.getElementById('disp'+n).textContent=fmt(T.t);},1000);
+}
+function stop(n){const T=timers[n];T.run=false;clearInterval(T.iv);}
+function reset(n){const T=timers[n];T.run=false;clearInterval(T.iv);T.t=0;document.getElementById('disp'+n).textContent='٠٠:٠٠';}
+</script>
+</body>
+</html>
